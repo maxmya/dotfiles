@@ -1,0 +1,86 @@
+[user]
+  name       = maxmya
+  email      = maxmya@tutamail.com
+  signingkey = 4F94B6344FC0DA0C
+
+[core]
+  compression  = 9
+  whitespace   = error
+  preloadindex = true
+
+[advice]
+  addEmptyPathspec   = false
+  pushNonFastForward = false
+  statusHints        = false
+
+[init]
+  defaultBranch = dev
+
+[status]
+  branch             = true
+  showStash          = true
+  showUntrackedFiles = all
+  
+[diff]
+  context          = 3
+  renames          = copies
+  interHunkContext = 10
+
+[pager]
+  diff   = diff-so-fancy | $PAGER
+  branch = false
+  tag    = false
+
+[diff-so-fancy]
+  markEmptyLines = false
+
+[color "diff"]
+  meta       = black bold
+  frag       = magenta
+  context    = white
+  whitespace = yellow reverse
+  old        = red
+
+[interactive]
+  diffFilter = diff-so-fancy --patch
+  singlekey  = true
+
+[push]
+  autoSetupRemote = true
+  deafult         = current
+  followTags      = true
+
+[pull]
+  default = current
+  rebase  = true
+
+[rebase]
+  autoStash           = true
+  missingCommitsCheck = warn
+
+[log]
+  abbrevCommit = true
+  graphColors  = blue,yellow,cyan,magenta,green,red
+
+[color "decorate"]
+  HEAD         = red
+  branch       = blue
+  tag          = yellow
+  remoteBranch = magenta
+
+[color "branch"]
+  current  = magenta
+  local    = default
+  remote   = yellow
+  upstream = green
+  plain    = blue
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort    = -taggerdate
+  gpgsign = true
+
+[commit]
+  gpgsign = true

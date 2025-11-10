@@ -1,0 +1,58 @@
+@define-color foreground #d4be98;
+@define-color background #282828;
+@define-color visible    #B6A591;
+@define-color active     #FFB764;
+
+* {
+  background-color: @background;
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 17px;
+}
+
+#window {
+  color: @foreground;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @foreground;
+    box-shadow: none;
+    border: none;
+
+}
+
+#workspaces button:hover {
+    background: inherit;
+    box-shadow: none;
+    border: none;
+}
+
+#workspaces button.empty{
+  color: @foreground;
+  opacity: 0.3;
+}
+
+#workspaces button.visible {
+  color: @visible;
+}
+
+#workspaces button.active{
+  color: @active;
+}
+
+#tray,
+#pulseaudio,
+#bluetooth {
+  color: @foreground;
+  padding-left: 10px;
+}
+
+#clock,
+#custom-notifications {
+  color: @foreground;
+}
+
+#network{
+  min-width: 250px;
+}
+

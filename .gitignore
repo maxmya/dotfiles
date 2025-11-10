@@ -1,0 +1,8 @@
+.config/dconf
+.config/fcitx
+.config/ibus
+.config/net.imput.helium
+.config/yay
+.config/pulse
+.config/github-copilot
+*/lazy-lock.json
