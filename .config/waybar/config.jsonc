@@ -10,18 +10,16 @@
       "hyprland/workspaces",
       "hyprland/window"
     ],
-    "modules-center": [
-         ],
+    "modules-center": [],
     "modules-right": [
       "mpris",
       "tray",
       "pulseaudio",
       "bluetooth",
       "network",
-       "clock",
+      "clock",
       "custom/notifications"
     ],
-  
     "hyprland/workspaces": {
       "on-click": "activate",
       "format": "{name}",
@@ -39,30 +37,30 @@
       }
     },
     "clock": {
-        	"format": "{:%I:%M %p}",
-        	"rotate": 0,
-        	"format-alt": "{  %d·%m·%y}",
-        	"tooltip-format": "<span>{calendar}</span>",
-        	"calendar": {
-            		"mode": "month",
-            		"format": {
-                	    "months": "<span color='#ff6699'><b>{}</b></span>",
-                      "days": "<span color='#cdd6f4'><b>{}</b></span>",
-                	    "weekdays": "<span color='#7CD37C'><b>{}</b></span>",
-                	    "today": "<span color='#ffcc66'><b>{}</b></span>"
-            	}
-            }
+      "format": "{:%I:%M %p}",
+      "rotate": 0,
+      "format-alt": "{  %d·%m·%y}",
+      "tooltip-format": "<span>{calendar}</span>",
+      "calendar": {
+        "mode": "month",
+        "format": {
+          "months": "<span color='#ff6699'><b>{}</b></span>",
+          "days": "<span color='#cdd6f4'><b>{}</b></span>",
+          "weekdays": "<span color='#7CD37C'><b>{}</b></span>",
+          "today": "<span color='#ffcc66'><b>{}</b></span>"
+        }
+      }
     },
-   	"network": {
-        	"tooltip": true,
-        	"rotate": 0,
-        	"tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
-        	"format-linked": "{ifname} (No IP)",
-        	"format-disconnected": " 󰖪 ",
-        	"tooltip-format-disconnected": "Disconnected",
-        	"format-ethernet": "<span foreground='#99ffdd'>  {bandwidthDownBytes}</span> <span foreground='#ffcc66'>  {bandwidthUpBytes}</span>",
-        	"interval": 2
-   	} , 
+    "network": {
+      "tooltip": true,
+      "rotate": 0,
+      "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>",
+      "format-linked": "{ifname} (No IP)",
+      "format-disconnected": " 󰖪 ",
+      "tooltip-format-disconnected": "Disconnected",
+      "format-ethernet": "<span foreground='#99ffdd'>  {bandwidthDownBytes}</span> <span foreground='#ffcc66'>  {bandwidthUpBytes}</span>",
+      "interval": 2
+    },
     "bluetooth": {
       "format": "",
       "format-disabled": "󰂲",
@@ -98,11 +96,11 @@
       "on-click-right": "swaync-client -d -sw",
       "escape": true
     },
-           "tray": {
+    "tray": {
       "icon-size": 12,
       "spacing": 12
     },
-       "mpris": {
+    "mpris": {
       "format": "{player_icon} {dynamic}  ",
       "dynamic-order": [
         "artist",
@@ -119,8 +117,7 @@
       },
       "enable-tooltip-len-limits": true
     }
-    
-     },
+  },
   {
     "reload_style_on_change": true,
     "layer": "top",
