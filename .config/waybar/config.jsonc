@@ -12,7 +12,6 @@
     ],
     "modules-center": [],
     "modules-right": [
-      "mpris",
       "tray",
       "pulseaudio",
       "bluetooth",
